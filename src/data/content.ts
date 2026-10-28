@@ -13,7 +13,7 @@ export const profile = {
   location: "Los Angeles, CA",
   status: "Open to opportunities",
   summary:
-    "I'm a full-stack engineer specializing in web technologies. I love bringing people's ideas to life.",
+    "I'm a full-stack engineer who loves bringing people's ideas to life. Lately I'm exploring platform engineering — Linux, networking, containers — and Rust for fun, by building and running the infrastructure behind my own side project, a music review app. If you're on a similar path or have advice to share, I'd love to connect.",
   // TODO: drop your headshot file in /public (e.g. public/headshot.jpg) and set the path here
   photo: "/profile.jpeg", // e.g. "/headshot.jpg"
 };
@@ -87,6 +87,14 @@ export const projects: Project[] = [
     ],
     videoEmbed: "https://www.youtube.com/embed/h85k37xR3ks",
     videoOrientation: "portrait",
+  },
+  {
+    name: "Music Review App", // TODO: rename once you settle on a name
+    description:
+      "A music review service I'm building as a hands-on way to learn platform engineering. Starting with a Rust CLI to interface with Postgres (self hosted MusicBrainz mirror), before layering on a web app in TypeScript, Node, and React/Electron. Still early — this is planning and first scaffolding, not a working app yet.",
+    role: "Solo Developer",
+    stack: ["Rust", "PostgreSQL", "TypeScript", "Node.js", "React"],
+    status: "In Progress",
   },
 ];
 
